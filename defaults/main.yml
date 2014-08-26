@@ -16,9 +16,8 @@ ntp_servers:
  - ntp.ubuntu.com
 
 ntp_restricts:
-  # By default, exchange time with everybody, but don't allow configuration.
-  - '-4 default kod notrap nomodify nopeer noquery'
-  - '-6 default kod notrap nomodify nopeer noquery'
+  - '-4 default nomodify nopeer noquery notrap'
+  - '-6 default nomodify nopeer noquery notrap'
 
   # Local users may interrogate the ntp server more closely.
   - '127.0.0.1'
