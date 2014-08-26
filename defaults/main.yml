@@ -23,3 +23,8 @@ ntp_restricts:
   # Local users may interrogate the ntp server more closely.
   - '127.0.0.1'
   - '::1'
+
+ntp_enables: []
+
+ntp_disables:
+ - monitor
