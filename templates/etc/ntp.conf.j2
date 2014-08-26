@@ -2,13 +2,14 @@
 
 driftfile {{ ntp_driftfile }}
 
-# Enable this if you want statistics to be logged.
-#statsdir /var/log/ntpstats/
+{% if ntp_statsdir %}
+statsdir {{ ntp_statsdir }}
+{% endif %}
 
-statistics loopstats peerstats clockstats
-filegen loopstats file loopstats type day enable
-filegen peerstats file peerstats type day enable
-filegen clockstats file clockstats type day enable
+statistics {{ ntp_statistics | join(' ') }}
+{% for ntp_filegen in ntp_filegens %}
+filegen {{ ntp_filegen }}
+{% endfor %}
 
 # Specify one or more NTP servers.
 
@@ -35,11 +36,10 @@ enable {{ ntp_enable }}
 disable {{ ntp_disable }}
 {% endfor %}
 
-# If you want to provide time to your local subnet, change the next line.
-# (Again, the address is an example only.)
-#broadcast 192.168.123.255
+{% if ntp_broadcast %}
+broadcast {{ ntp_broadcast }}
+{% endif %}
 
-# If you want to listen to time broadcasts on your local subnet, de-comment the
-# next lines.  Please do this only if you trust everybody on the network!
-#disable auth
-#broadcastclient
+{% if ntp_broadcastclient %}
+broadcastclient
+{% endif %}
