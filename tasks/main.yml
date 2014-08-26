@@ -13,5 +13,5 @@
     owner: root
     group: root
     mode: 0644
-  notify: restart ntpd
+  notify: restart ntp
   tags: [configuration, ntp, ntp-configuration]
