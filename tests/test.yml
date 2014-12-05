@@ -1,5 +1,5 @@
 ---
-# test file for cron-apt
+# test file for ntp
 - hosts: localhost
   remote_user: root
   roles:
