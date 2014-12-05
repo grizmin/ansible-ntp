@@ -1,4 +1,6 @@
-## ntp [![Build Status](https://travis-ci.org/Oefenweb/ansible-ntp.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-ntp)
+## ntp
+
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-ntp.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-ntp) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-ntp-blue.svg)](https://galaxy.ansible.com/list#/roles/1498)
 
 Set up a ntp server in Debian-like systems.
 
