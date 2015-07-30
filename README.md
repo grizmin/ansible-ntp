@@ -31,7 +31,7 @@ None
 ---
 - hosts: all
   roles:
-  - ntp
+    - ntp
 ```
 
 #### License

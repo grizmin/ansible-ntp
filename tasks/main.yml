@@ -1,9 +1,11 @@
----
 # tasks file for ntp
+---
 - name: install
   apt:
     name: ntp
     state: latest
+    update_cache: true
+    cache_valid_time: 3600
   tags: [configuration, ntp, ntp-install]
 
 - name: update configuration file

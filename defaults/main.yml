@@ -1,5 +1,5 @@
----
 # defaults file for ntp
+---
 ntp_driftfile: /var/lib/ntp/ntp.drift
 
 # Enable this if you want statistics to be logged.
