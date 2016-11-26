@@ -1,7 +1,5 @@
 ## ntp
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-ntp.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-ntp) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-ntp-blue.svg)](https://galaxy.ansible.com/list#/roles/1498)
-
 Set up a ntp server in Debian-like systems.
 
 #### Requirements
@@ -27,7 +25,7 @@ None
 
 ## Recommended
 
-* `ansible-logrotated` ([see](https://github.com/Oefenweb/ansible-logrotated), when `ntp_statsdir != false`)
+* `ansible-logrotated` ([see](https://github.com/grizmin/ansible-logrotated), when `ntp_statsdir != false`)
 
 #### Example (simple)
 
@@ -67,8 +65,8 @@ BSD
 
 #### Author Information
 
-Mischa ter Smitten (based on work of Benno Joy)
+Konstantin Krastev forked from Mischa ter Smitten (based on work of Benno Joy)
 
 #### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/Oefenweb/ansible-ntp/issues)!
+Are [welcome](https://github.com/grizmin/ansible-ntp/issues)!
